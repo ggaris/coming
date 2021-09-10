@@ -1,6 +1,7 @@
 {
-  "name": "coming-ui",
+  "name": "coming",
   "version": "0.1.3",
+  "license": "MIT",
   "scripts": {
     "dev": "dumi dev",
     "docs:build": "dumi build",
@@ -37,6 +38,11 @@
     "lint-staged": "^10.0.7",
     "prettier": "^2.2.1",
     "yorkie": "^2.0.0"
+  },
+  "author": {"name": "jiantong","email": "jiantong12138@163.com","url": "http://101.200.89.77/"},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jiantongCode/coming-ui"
   },
   "keywords": ["react","component library","coming","ui"]
 }

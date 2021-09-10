@@ -2,7 +2,7 @@ Demo:
 
 ```tsx
 import React from "react";
-import { Button } from "coming-ui";
+import { Button } from "coming";
 
 const ButtonDemo = () => {
   return (

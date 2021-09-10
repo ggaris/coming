@@ -4,7 +4,7 @@ Demo:
 
 ```tsx
 import React from "react";
-import { Foo } from "coming-ui";
+import { Foo } from "coming";
 
 export default () => <Foo title='First Demo' />;
 ```

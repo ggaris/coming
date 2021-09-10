@@ -1,27 +1,20 @@
 # coming-ui
 
-## Getting Started
+React UI is a react UI library that uses the latest design language
 
-Install dependencies,
+## How is it used in a project?
 
 ```bash
-$ npm i
+$ npm i coming-ui or yarn add coming-ui
 ```
 
-Start the dev server,
-
-```bash
-$ npm start
-```
-
-Build documentation,
-
-```bash
-$ npm run docs:build
-```
-
-Build library via `father-build`,
-
-```bash
-$ npm run build
+```jsx
+import { Button } from "coming";
+const ComingDemo = () => {
+  return (
+    <>
+      <Button>Button</Button>
+    </>
+  );
+};
 ```
