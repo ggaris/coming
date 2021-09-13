@@ -1,13 +1,25 @@
 // 标准字体大小
 @FontSizeNorm: 18px;
 
-@ButtonBackColor: #2c2f47;
+@ButtonBackgroundColorDefault: #2c2f47;
 
-.jt-button {
+.cui-button {
   padding: 12px 20px;
   border: none;
   border-radius: 10px;
-  background-color: @ButtonBackColor;
   color: #fff;
+  cursor: pointer;
   font-size: @FontSizeNorm;
+}
+
+.default {
+  background-color: transparent;
+  color: #2c2f47;
+  border: 1px solid @ButtonBackgroundColorDefault;
+}
+.default:hover {
+  background-color: rgba(44, 47, 71, 0.3);
+  border: 1px solid transparent;
+}
+.primary {
 }
