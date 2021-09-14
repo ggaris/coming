@@ -1,25 +1,30 @@
 // 标准字体大小
-@FontSizeNorm: 18px;
+@FontSizeMedium: 16px;
 
-@ButtonBackgroundColorDefault: #2c2f47;
-
+@ButtonBackgroundColorPrimary: #2c2f47;
+@ButtonBackgroundColorDanger: #f56c6c;
 .cui-button {
-  padding: 12px 20px;
+  padding: 5px 8px;
   border: none;
-  border-radius: 10px;
+  border-radius: 5px;
   color: #fff;
   cursor: pointer;
-  font-size: @FontSizeNorm;
+  // font-size: @FontSizeMedium;
+  font-size: var(--cui-font-size-medium);
 }
 
 .default {
   background-color: transparent;
   color: #2c2f47;
-  border: 1px solid @ButtonBackgroundColorDefault;
+  border: 1px solid @ButtonBackgroundColorPrimary;
 }
 .default:hover {
   background-color: rgba(44, 47, 71, 0.3);
   border: 1px solid transparent;
 }
 .primary {
+  background-color: @ButtonBackgroundColorPrimary;
+}
+.danger {
+  background-color: @ButtonBackgroundColorDanger;
 }
