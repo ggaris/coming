@@ -8,13 +8,13 @@ React UI is a react UI library that uses the latest design language
 ## How is it used in a project?
 
 ```bash
-$ yarn add coming-ui
+$ yarn add coming
 ```
 
 or
 
 ```bash
-$ npm i coming-ui
+$ npm i coming
 ```
 
 ```jsx

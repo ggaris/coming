@@ -13,9 +13,10 @@ Demo:
 
 - 可以通过传递 size 来定义按钮的大小
 
-```tsx
+
+```jsx
 import React from "react";
-import { Button } from "coming";
+import { Button } from 'coming';
 import "./Button.md.less";
 const ButtonDemo = () => {
   return (
@@ -26,13 +27,13 @@ const ButtonDemo = () => {
       <Button type='link'>链接按钮</Button>
       <hr />
       <Button type='default' size='large'>
-        默认按钮
+        大个按钮
       </Button>
       <Button type='default' size='medium'>
         默认按钮
       </Button>
       <Button type='default' size='small'>
-        默认按钮
+        小个按钮
       </Button>
     </div>
   );

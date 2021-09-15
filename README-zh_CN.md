@@ -8,13 +8,13 @@ coming UI 是一个使用最新设计语言的 React UI 库
 ## 如何在项目中使用它
 
 ```bash
-$ yarn add coming-ui
+$ yarn add coming
 ```
 
 or
 
 ```bash
-$ npm i coming-ui
+$ npm i coming
 ```
 
 ```jsx

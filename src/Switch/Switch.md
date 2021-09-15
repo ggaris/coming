@@ -9,14 +9,14 @@ defaultChecked?: Boolean
 ```
 
 ```jsx
-import React, { useState } from "react";
+import React from "react";
 import { Switch } from "coming";
-const ButtonDemo = () => {
-  const onChange = status => {
-    console.log(status);
+const SwitchDemo = () => {
+  const onChange = (status) => {
+    // 可以通过 status 获取状态
   };
   return <Switch onChange={onChange} defaultChecked={true} />;
 };
 
-export default ButtonDemo;
+export default SwitchDemo;
 ```

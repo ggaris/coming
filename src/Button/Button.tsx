@@ -1,14 +1,20 @@
-import getClassName from "@/common/utils/getClassName";
 import React from "react";
+import getClassName from "@/common/utils/getClassName";
 import "./Button.less";
-type Mold = "default" | "primary" | "danger" | "link";
-type Size = "medium" | "large" | "small";
-interface ButtonProps {
+export type Mold = "default" | "primary" | "danger" | "link";
+export type Size = "medium" | "large" | "small";
+export interface ButtonProps {
+   /**
+   * 可以这样写属性描述
+   * @description       测试文本
+   * @description.zh-CN 测试文本
+   * @default           测试文本
+   */
   type?: Mold;
   size?: Size;
 }
 
-const Button: React.FunctionComponent<ButtonProps> = props => {
+const Button:React.FunctionComponent<ButtonProps> = (props) => {
   let sizeList = ["medium", "large", "small"];
   let classNameList = ["default", "primary", "danger", "link"];
 

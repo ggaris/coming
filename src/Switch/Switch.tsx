@@ -16,9 +16,7 @@ const Switch: React.FunctionComponent<SwitchProps> = props => {
     <>
       <div
         className={`cui-switch ${status ? "" : "yes"}`}
-        onClick={() => switchOnclick()}>
-        <p></p>
-      </div>
+        onClick={() => switchOnclick()}></div>
     </>
   );
 };

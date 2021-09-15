@@ -8,7 +8,9 @@
   align-items: center;
   cursor: pointer;
   transition: 0.5s;
-  p {
+  &::before {
+    content: "";
+    display: inline-block;
     width: 16px;
     height: 16px;
     background-color: #fff;
@@ -19,7 +21,7 @@
 
 .yes {
   background-color: #005dff;
-  p {
+  &::before {
     transform: translateX(20px);
   }
 }
