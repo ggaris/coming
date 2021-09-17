@@ -1,9 +1,9 @@
 import React from "react";
 import getClassName from "@/common/utils/getClassName";
 import "./Button.less";
-export type Mold = "default" | "primary" | "danger" | "link";
-export type Size = "medium" | "large" | "small";
-export interface ButtonProps {
+type Mold = "default" | "primary" | "danger" | "link";
+type Size = "medium" | "large" | "small";
+interface ButtonProps {
    /**
    * 可以这样写属性描述
    * @description       测试文本
