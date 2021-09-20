@@ -2,16 +2,10 @@
 import React, { useState } from "react";
 import { Modal, Button } from "coming";
 const ModalDemo: React.FC = () => {
-  const { visible, setVisible } = useState(false);
+  const { visible, setVisible } = useState(true);
   return (
     <>
-      <Button
-        onClick={visible => {
-          console.log(this);
-        }}>
-        测试
-      </Button>
-      <Modal visible={false}></Modal>
+      <Modal visible={visible}></Modal>
     </>
   );
 };
