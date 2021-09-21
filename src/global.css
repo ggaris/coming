@@ -2,10 +2,13 @@
   --cui-font-size-large: 20px;
   --cui-font-size-medium: 14px;
   --cui-font-size-small: 13px;
+  --cui-color: #525250;
+
+  --cui-background-color: #e2e2e2;
 
   --cui-box-shadow-base: 0 2px 4px rgba(0, 0, 0, 0.12),
     0 0 6px rgba(0, 0, 0, 0.04);
-  --cui-box-shadow-light:0 2px 12px 0 rgba(0,0,0,0.1)
+  --cui-box-shadow-light: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
 }
 .padding-medium {
   padding: 5px 10px;

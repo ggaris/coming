@@ -1,4 +1,19 @@
 .wee-border-bottom(@color: #e2e2e2) {
-    border-bottom: 1px solid transparent;
-    border-image: linear-gradient(to bottom, transparent 50%, @color 50%)0 0 100% 0;
+  border-bottom: 1px solid transparent;
+  border-image: linear-gradient(to bottom, transparent 50%, @color 50%) 0 0 100%
+    0;
+}
+.wee-border(@color: #e2e2e2) {
+  border: 1px solid transparent;
+  border-image: linear-gradient(@color 0%, @color 50%);
+  border-image-slice: 10% 10%;
+}
+
+.max-words(@max-width: 120px) {
+  display: inline-block;
+  max-width: @max-width;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  vertical-align: middle;
 }
