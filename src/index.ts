@@ -6,5 +6,6 @@ export { default as Switch } from './Switch/Switch.tsx'
 export { default as Card } from './Card/Card.tsx'
 export { default as Modal } from './Modal/Modal.tsx'
 export { default as UpLoad } from './UpLoad/UpLoad.tsx'
+export { default as Avatar } from './Avatar/Avatar.tsx'
 
 

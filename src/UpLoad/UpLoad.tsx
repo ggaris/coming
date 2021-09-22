@@ -1,12 +1,13 @@
 import React, { useRef, useState } from "react";
 import "./UpLoad.less";
-interface UpLoadProps extends InheritableClassName {}
+interface UpLoadProps extends InheritableClassName {
+  multiple?: boolean;
+}
 const UpLoad: React.FunctionComponent<UpLoadProps> = props => {
   const InputEl = useRef<HTMLInputElement>(null);
   const [Files, setFiles] = useState<Array<File>>();
   const upLoad = () => {
     InputEl.current!.click();
-    console.log(Files);
   };
   const upFiles = () => {
     if (InputEl.current!.files !== null) {
@@ -38,7 +39,7 @@ const UpLoad: React.FunctionComponent<UpLoadProps> = props => {
         className='cui-upload-input'
         type='file'
         accept='image/*'
-        multiple
+        multiple={props.multiple}
         onChange={() => upFiles()}
         ref={InputEl}
       />
