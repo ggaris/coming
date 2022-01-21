@@ -1,5 +1,29 @@
-<h1 align="center">new-library<h1/>
+# coming-ui
 
-## Description
+React UI is a react UI library that uses the latest design language
 
-你可以使用该仓库快速启动一个 rollup 组件编写工具，你不用关系 rollup 如何配置 typescript 如何配置，当然该工具只是做了最基本的初始化，如果需要更高的自定义配置你完全可以。
+- Documentation - https://comingui.org
+- npm - https://www.npmjs.com/package/coming
+
+## How is it used in a project?
+
+```bash
+$ yarn add coming
+```
+
+or
+
+```bash
+$ npm i coming
+```
+
+```jsx
+import { Button } from "coming";
+const ComingDemo = () => {
+  return (
+    <>
+      <Button>Button</Button>
+    </>
+  );
+};
+```
