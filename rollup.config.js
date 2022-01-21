@@ -26,8 +26,13 @@ export default [
     plugins: [
       resolve(),
       commonjs(),
-      typescript({ tsconfig: './tsconfig.json' }),
-      postcss()
+      typescript({ tsconfig: './tsconfig.json', exclude: [".css"] }),
+      postcss(
+
+        {
+          modules: true
+        }
+      )
     ],
     external: ["react", "typescript"],
   },
