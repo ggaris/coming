@@ -34,7 +34,7 @@ export default [
         }
       )
     ],
-    external: ["react", "typescript"],
+    external: ["react", "typescript", "@testing-library/react"],
   },
   {
     input: "dist/esm/types/index.d.ts",
