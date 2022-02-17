@@ -4,7 +4,7 @@ import { render } from "@testing-library/react";
 import Button from "./Button";
 
 describe("Button", () => {
-  test("renders the Button component", () => {
+  test("Button组件没有问题", () => {
     render(<Button>测试</Button>);
   });
 });
