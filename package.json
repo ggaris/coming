@@ -13,7 +13,7 @@
     "t": "jest",
     "t:pro": "jest",
     "prepare": "husky install",
-    "commit": "git-cz",
+    "commit": "prettier --write ./src/ && eslint src/ --fix --ext .ts,.tsx  && git-cz",
     "lint": "eslint src/ --fix --ext .ts,.tsx",
     "fix": "prettier --write  ./src/"
   },
