@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="1" failures="0" errors="0" time="0.608">
+  <testsuite name="Button" errors="0" failures="0" skipped="0" timestamp="2022-02-10T03:32:16" time="0.319" tests="1">
+    <testcase classname="Button Button组件没有问题" name="Button Button组件没有问题" time="0.008">
+    </testcase>
+  </testsuite>
+</testsuites>

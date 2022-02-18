@@ -28,13 +28,12 @@ export default [
       commonjs(),
       typescript({ tsconfig: './tsconfig.json', exclude: [".css"] }),
       postcss(
-
         {
           modules: true
         }
       )
     ],
-    external: ["react", "typescript", "@testing-library/react"],
+    external: ["react", "typescript", "@testing-library/react", "jest-junit", "jest"],
   },
   {
     input: "dist/esm/types/index.d.ts",
