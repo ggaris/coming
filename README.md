@@ -27,3 +27,5 @@ const ComingDemo = () => {
   );
 };
 ```
+
+本项目一定要安装 eslint prettier style lint 插件
