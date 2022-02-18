@@ -13,7 +13,15 @@
     "t": "jest",
     "t:pro": "jest",
     "prepare": "husky install",
-    "commit": "npx git-cz"
+    "commit": "git-cz",
+    "lint": "eslint src/ --fix --ext .ts,.tsx",
+    "fix": "prettier --write  ./src/"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
   },
   "license": "MIT",
   "devDependencies": {

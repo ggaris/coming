@@ -9,7 +9,7 @@ const Icon: React.FC<IconProps> = (props) => {
   return (
     <span>
       <svg>
-        <use xlinkHref="SvgDemo"></use>
+        <use xlinkHref='SvgDemo' />
       </svg>
     </span>
   );
