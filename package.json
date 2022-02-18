@@ -11,7 +11,9 @@
     "build": "rollup -c",
     "dev": "rollup -c -w",
     "t": "jest",
-    "t:pro": "jest"
+    "t:pro": "jest",
+    "prepare": "husky install",
+    "commit": "npx git-cz"
   },
   "license": "MIT",
   "devDependencies": {
@@ -19,24 +21,38 @@
     "@babel/preset-env": "^7.16.11",
     "@babel/preset-react": "^7.16.7",
     "@babel/preset-typescript": "^7.16.7",
+    "@commitlint/cli": "^16.2.1",
+    "@commitlint/config-conventional": "^16.2.1",
     "@rollup/plugin-commonjs": "~21.0.1",
     "@rollup/plugin-node-resolve": "~13.1.3",
     "@rollup/plugin-typescript": "~8.3.0",
     "@testing-library/react": "^12.1.2",
     "@types/jest": "^27.4.0",
     "@types/react": "~17.0.38",
+    "@typescript-eslint/eslint-plugin": "^5.12.0",
+    "@typescript-eslint/parser": "^5.12.0",
     "babel-loader": "^8.2.3",
+    "commitizen": "^4.2.4",
+    "commitlint-config-cz": "^0.13.3",
+    "eslint": "^8.9.0",
+    "eslint-config-alloy": "^4.5.1",
+    "eslint-plugin-react": "^7.28.0",
+    "husky": "^7.0.0",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^27.4.7",
     "jest-junit": "^13.0.0",
+    "lint-staged": "^12.3.4",
     "postcss": "^8.4.5",
     "react": "~17.0.2",
     "react-dom": "^17.0.2",
     "rollup-plugin-dts": "~4.1.0",
     "rollup-plugin-postcss": "^4.0.2",
     "rollup-plugin-terser": "^7.0.2",
+    "stylelint": "^14.5.1",
+    "stylelint-config-prettier": "^9.0.3",
+    "stylelint-config-standard": "^25.0.0",
     "tslib": "~2.3.1",
-    "typescript": "~4.5.5"
+    "typescript": "^4.5.5"
   },
   "description": "lalala~",
   "homepage": "comingui.org",
@@ -55,5 +71,10 @@
     "coming",
     "ui"
   ],
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
   "dependencies": {}
 }

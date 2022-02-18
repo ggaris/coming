@@ -1,6 +1,5 @@
 import React, { ReactNode } from "react";
 import styles from "./Button.css";
-// import { classnames } from "src/Utils/ClassNames";
 import classnames from "../../Utils/ClassNames";
 type Mold = "default" | "primary" | "danger" | "link";
 type Size = "medium" | "large" | "small";
@@ -19,7 +18,7 @@ interface ButtonProps {
    */
   type?: Mold;
   size?: Size;
-  onClick?: Function;
+  onClick?: (value: string) => void;
   className?: string;
   disabled?: boolean;
   icon?: ReactNode;
@@ -30,7 +29,7 @@ const Button: React.FunctionComponent<ButtonProps> = (props) => {
   return (
     <button
       className={classnames(styles, ["default", "small"])}
-      onClick={() => (props.onClick === undefined ? () => {} : props.onClick())}
+      onClick={() => (props.onClick === undefined ? null : props.onClick("333"))}
     >
       {props.children}
     </button>
