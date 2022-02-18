@@ -1,7 +1,5 @@
 /** classname工具 */
-interface classnamesPar {
-  (styles: any, keys: Array<string>): string;
-}
+type classnamesPar = (styles: any, keys: Array<string>) => string;
 
 const classnames: classnamesPar = (styles, keys) => {
   let classnameFormat = ``;
