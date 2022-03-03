@@ -4,8 +4,9 @@ import commonjs from '@rollup/plugin-commonjs'
 import typescript from '@rollup/plugin-typescript'
 import dts from 'rollup-plugin-dts'
 import postcss from "rollup-plugin-postcss";
+import svgr from '@svgr/rollup' // svg 支持
 
-const packageJson = require("./package.json")
+import packageJson from './package.json'
 
 
 export default [
@@ -31,9 +32,10 @@ export default [
         {
           modules: true
         }
-      )
+      ),
+      svgr({ icon: true })
     ],
-    external: ["react", "typescript", "@testing-library/react", "jest-junit", "jest"],
+    external: ["react", "typescript", "@testing-library/react", "jest-junit", "jest", "@svgr/rollup"],
   },
   {
     input: "dist/esm/types/index.d.ts",
