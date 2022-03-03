@@ -17,6 +17,6 @@
     "emitDeclarationOnly": true,
     "typeRoots": ["./node_modules/@types", "./typings"]
   },
-  "include": ["src/**/*"],
-  "exclude": ["node_modules"]
+  "include": ["src/**/*"]
+  // "exclude": ["node_modules"]
 }

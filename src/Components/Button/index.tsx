@@ -6,7 +6,7 @@ type Size = "medium" | "large" | "small";
 /** Button的可支持的参数类型
  * type | size | onClick | className | disabled | icon | loading
  */
-interface ButtonProps {
+export interface ButtonProps {
   /**
    * @type  按钮样式
    * @size 按钮尺寸
@@ -16,7 +16,7 @@ interface ButtonProps {
    * @icon 图标
    * @loading 加载状态
    */
-  type?: Mold;
+  type: Mold;
   size?: Size;
   onClick?: (value: string) => void;
   className?: string;

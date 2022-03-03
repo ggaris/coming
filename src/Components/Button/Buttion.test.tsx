@@ -1,10 +1,27 @@
-import React from "react";
-import { render } from "@testing-library/react";
+import React, { FC, ReactElement } from "react";
+import { render, RenderOptions, fireEvent, screen } from "@testing-library/react";
+import Button from "./index";
 
-import Button from "./Button";
+describe("App", () => {
+  test("renders App component", () => {
+    render(<Button type='danger'>3333</Button>);
 
-// describe("Button", () => {
-//   test("Button组件没有问题", () => {
-//     render(<Button>测试</Button>);
-//   });
-// });
+    screen.getByText("3333").click();
+  });
+});
+
+describe("App", () => {
+  const foo = () => {
+    console.log(222);
+  };
+
+  test("renders App component", () => {
+    render(
+      <Button type='danger' onClick={foo}>
+        3333
+      </Button>,
+    );
+
+    screen.getByText("3333").click();
+  });
+});

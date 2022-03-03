@@ -9,7 +9,7 @@ module.exports = {
     browser: true,
     // node: true,
     // mocha: true,
-    // jest: true,
+    jest: true,
     // jquery: true
   },
   globals: {
@@ -19,7 +19,7 @@ module.exports = {
   rules: {
     // 自定义你的规则
   },
-  settings:{
+  settings: {
     react: {
       version: "detect"
     }
