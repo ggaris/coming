@@ -1,6 +1,6 @@
 {
   "name": "coming",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
   "files": [
@@ -64,16 +64,16 @@
     "tslib": "~2.3.1",
     "typescript": "^4.5.5"
   },
-  "description": "lalala~",
-  "homepage": "comingui.org",
+  "description": "又是一个无聊的项目🥱,🍺",
+  "homepage": "comingui.com",
   "author": {
     "name": "Aris",
     "email": "jiantong12138@163.com",
-    "url": "http://comingui.org"
+    "url": "https://comingui.com"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/jiantongCode/coming-ui"
+    "url": "https://github.com/ArisZZZ/coming-ui"
   },
   "keywords": [
     "react",
