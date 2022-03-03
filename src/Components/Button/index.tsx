@@ -1,12 +1,13 @@
 import React, { ReactNode } from "react";
 import styles from "./Button.css";
 import classnames from "../../Utils/ClassNames";
+import { PropsBase } from "src/Types/globalTypes";
 type Mold = "default" | "primary" | "danger" | "link";
 type Size = "medium" | "large" | "small";
 /** Button的可支持的参数类型
  * type | size | onClick | className | disabled | icon | loading
  */
-export interface ButtonProps {
+export interface ButtonProps extends PropsBase {
   /**
    * @type  按钮样式
    * @size 按钮尺寸
@@ -19,7 +20,6 @@ export interface ButtonProps {
   type: Mold;
   size?: Size;
   onClick?: (value: string) => void;
-  className?: string;
   disabled?: boolean;
   icon?: ReactNode;
   loading?: boolean;
