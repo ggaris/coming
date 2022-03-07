@@ -1,7 +1,8 @@
 import React from "react";
+import { PropsBase } from "src/Types/globalTypes";
 import SvgDemo from "../../Public/demo.svg";
 
-interface IconProps {
+interface IconProps extends PropsBase {
   name: string;
 }
 
