@@ -1,3 +1,5 @@
 .cui-button {
-  color:red
+  color:var(--cui-primary-color);
+  background-color: var(--cui-primary-bg-color);
+  box-shadow: var(--cui-primary-shadow-color);
 }
