@@ -1,0 +1,5 @@
+packages:
+  - "coming/**"
+  - "coming-icon/**"
+  - "coming-example/**"
+  - "lib-hooks/**"

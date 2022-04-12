@@ -1,0 +1,21 @@
+{
+  "name": "coming",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "build":"npx unbuild",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "react":"18.0.0"
+  },
+  "peerDependencies": {
+    "react":"18.0.0"
+  },
+  "author": "",
+  "license": "ISC"
+}
