@@ -1,14 +1,18 @@
 import { useState } from 'react'
-import { Button } from 'coming'
-import './App.css'
+import { Routes, Route } from 'react-router-dom'
+import Button from './pages/button'
+import Dialog from './pages/dialog'
+import Home from './pages/home'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <div className="App">
-      <Button />
-    </div>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/dialog" element={<Dialog />} />
+      <Route path="button" element={<Button />} />
+    </Routes>
   )
 }
 

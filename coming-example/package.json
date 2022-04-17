@@ -1,16 +1,17 @@
 {
   "name": "coming-example",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.0.1-alpha",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview"
   },
   "dependencies": {
+    "coming": "0.0.1-alpha",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "coming":"^1.0.0"
+    "react-router-dom": "6"
   },
   "devDependencies": {
     "@types/react": "^17.0.33",
