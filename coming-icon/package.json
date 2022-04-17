@@ -4,8 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "svgr --icon --title-prop --replace-attr-values -d icons --out-dir lib"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@svgr/cli": "^6.2.1",
+    "react": "^18.0.0"
+  },
+  "peerDependencies":{
+    "@svgr/cli": "^6.2.1",
+    "react": "^18.0.0"
+  }
 }
