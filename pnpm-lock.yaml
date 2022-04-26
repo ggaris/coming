@@ -4,8 +4,10 @@ importers:
 
   coming:
     specifiers:
+      lib-hooks: 0.0.1-alpha
       react: 18.0.0
     devDependencies:
+      lib-hooks: link:../lib-hooks
       react: 18.0.0
 
   coming-example:
@@ -37,6 +39,12 @@ importers:
       react: ^18.0.0
     devDependencies:
       '@svgr/cli': 6.2.1
+      react: 18.0.0
+
+  lib-hooks:
+    specifiers:
+      react: 18.0.0
+    devDependencies:
       react: 18.0.0
 
 packages:
