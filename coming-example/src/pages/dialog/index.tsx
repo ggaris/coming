@@ -1,8 +1,9 @@
 import React from 'react'
+import { Dialog } from 'coming'
 
 const index = () => {
   return (
-    <div>0000</div>
+    <Dialog></Dialog>
   )
 }
 
