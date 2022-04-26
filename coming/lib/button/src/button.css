@@ -1,5 +1,32 @@
 .cui-button {
-  color:var(--cui-primary-color);
-  background-color: var(--cui-primary-bg-color);
+  padding: var(--cui-padding-medium);
+  
+  border:none;
+  border-radius:var(--cui-border-radius);
+  
+  color:var(--cui-primary-font-color-black);
+  background-color: var(--cui-primary-color);
   box-shadow: var(--cui-primary-shadow-color);
+
+  cursor:pointer;
+}
+.cui-button:active {
+  transform: scale(0.98);
+  box-shadow: var(--cui-active-shadow-color);
+}
+
+
+.cui-button-link {
+  background-color: var(--cui-link-color);
+}
+.cui-button-danger {
+  background-color: var(--cui-danger-color);
+}
+
+.cui-button-large {
+  padding: var(--cui-padding-large);
+}
+
+.cui-button-small {
+  padding: var(--cui-padding-small);
 }

@@ -1,14 +1,14 @@
-import type { ReactNode } from 'react'
+import type { HTMLAttributes, ReactNode } from 'react'
 import React, { useEffect } from 'react'
-// import { UseScopeClass } from '../../../hooks/index'
+import useScopeClass from '../../../hooks/scopeClass'
 import './button.css'
 
-type Mold = 'default' | 'primary' | 'danger' | 'link'
+type Mold = 'primary' | 'danger' | 'link'
 type Size = 'medium' | 'large' | 'small'
 /** Button的可支持的参数类型
  * type | size | onClick | className | disabled | icon | loading
  */
-export interface ComingButton {
+export interface ComingButton extends HTMLAttributes<HTMLButtonElement> {
   /**
    * @type  按钮样式
    * @size 按钮尺寸
@@ -20,14 +20,13 @@ export interface ComingButton {
    */
   type?: Mold
   size?: Size
-  onClick?: Function
   disabled?: boolean
   icon?: ReactNode
   loading?: boolean
 }
 
 const Button: React.FC<ComingButton> = ({
-  type = 'default',
+  type = 'primary',
   size = 'medium',
   onClick = () => { },
   disabled = false,
@@ -35,12 +34,12 @@ const Button: React.FC<ComingButton> = ({
   loading = false,
   children = '',
 }) => {
-  // const ButtonClass = UseScopeClass('cui-button')
+  const ButtonClass = useScopeClass('cui-button');
   useEffect(() => {
   }, [loading])
 
   return (
-    <button className=''
+    <button className={[ButtonClass(''), ButtonClass(type), ButtonClass(size)].join(' ')}
       disabled={disabled}
       onClick={(e) => { onClick(e) }}>
       {icon}

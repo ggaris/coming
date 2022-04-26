@@ -5,9 +5,9 @@
   --cui-primary-color-hover: #1AAA5D15;
 
   /* 主题字体 */
-  --cui-primary-font-color      : #364245;
-  --cui-primary-font-color-hover: #1AAA5D;
-
+  --cui-primary-font-color-entity : #fff;
+  --cui-primary-font-color-hover  : #1AAA5D;
+  --cui-primary-font-color        : #364245;
 
   /* 阴影 */
   --cui-primary-shadow-color: 0px 3px 12px 0px #00000012;
@@ -18,16 +18,27 @@
 @media (prefers-color-scheme: dark) {
   :root {
     /* 主题色 */
-    --cui-primary-color      : #1976D2;
-    --cui-primary-bg-color   : #1976D215;
-    --cui-primary-color-hover: #1976D215;
+    --cui-primary-color: #1976D2;
+    --cui-success-color: #66BB6A;
+    --cui-warning-color: #FFA726;
+    --cui-danger-color : #F44336;
 
     /* 主题字体 */
-    --cui-primary-font-color      : #FFFFFF;
-    --cui-primary-font-color-hover: #1976D2;
+    --cui-primary-font-color-white: #FFFFFF;
+    --cui-primary-font-color-black: #000000;
+    --cui-primary-font-color-blue : #90CAF9;
+    --cui-primary-font-color-gray : #FFFFFF;
 
+    /* 圆角 */
+    --cui-border-radius: 4px;
+
+    /* 内边距 */
+    --cui-padding-medium: 6px 16px;
+    --cui-padding-large : 8px 22px;
+    --cui-padding-small : 4px 10px;
 
     /* 阴影 */
     --cui-primary-shadow-color: 0px 3px 12px 0px #00000012;
+    --cui-active-shadow-color : 0px 3px 12px 0px #00000040;
   }
 }
