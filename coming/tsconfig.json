@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "composite": true,
+    "module": "esnext",
+    "moduleResolution": "node"
+  },
+  "global": {
+    "vitest": true
+  },
+  "include": [
+    "index.ts"
+  ]
+}
