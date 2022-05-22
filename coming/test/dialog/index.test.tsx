@@ -1,5 +1,7 @@
-import { it } from 'vitest'
-it('should work', (ctx) => {
-  // 打印测试名称
-  console.log(ctx.meta.name, 9009)
-})
+import { describe, test, assert, it, expect } from 'vitest'
+
+import Dialog from '../../lib/dialog';
+
+it('renders correctly', () => {
+  expect(<Dialog>333</Dialog>);
+});
