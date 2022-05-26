@@ -16,4 +16,3 @@ jobs:
     steps:
     - name: sync development to wuhan
       run: git push origin development:wh_dev -f
-           
