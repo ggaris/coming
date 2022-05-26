@@ -7,7 +7,6 @@ import {
   RenderOptions,
   RenderResult,
 } from "@testing-library/react";
-import { BrowserRouter } from "react-router-dom";
 import { AppContext, useAppReducer } from '../hooks/useAppContext'
 
 const ContextWrapper = ({
@@ -24,26 +23,7 @@ const ContextWrapper = ({
   );
 };
 
-const RouterWrapper = ({
-  children,
-}: {
-  children: JSX.Element;
-}): JSX.Element => {
-  return (
-    <BrowserRouter>
-      <ContextWrapper>{children}</ContextWrapper>
-    </BrowserRouter>
-  );
-};
 
-export const renderWithRouter = (
-  ui: JSX.Element,
-  options: RenderOptions = {},
-  route = "/"
-): RenderResult => {
-  window.history.pushState({}, "Test page", route);
-  return rtlRender(ui, { wrapper: RouterWrapper, ...options });
-};
 
 export const render = (
   ui: JSX.Element,
@@ -51,3 +31,6 @@ export const render = (
 ): RenderResult => {
   return rtlRender(ui, { wrapper: ContextWrapper, ...options });
 };
+
+
+
