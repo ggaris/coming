@@ -12,7 +12,3 @@ jobs:
   sync:
     name: sync
     runs-on: ubuntu-latest
-    
-    steps:
-    - name: sync development to wuhan
-      run: git push origin development:wh_dev -f
