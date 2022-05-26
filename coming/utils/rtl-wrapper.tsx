@@ -18,7 +18,7 @@ const ContextWrapper = ({
 
   return (
     <AppContext.Provider value={{ state, dispatch }}>
-      {children + '333'}
+      {children}
     </AppContext.Provider>
   );
 };
